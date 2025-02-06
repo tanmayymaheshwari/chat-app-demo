@@ -13,7 +13,7 @@ const PORT = process.env.PORT; // defines the server port
 app.use(express.json()); // handles POST where body contains JSON
 app.use(cookieParser()); // extract jwt from cookie
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: ["http://localhost:5173","http://localhost:5174"],
     credentials: true,
 }))
 
